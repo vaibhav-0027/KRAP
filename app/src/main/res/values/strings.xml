@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">KRAP</string>
+    <string name="address">Choose your nearest location</string>
+
+    <string-array name="address_array">
+        <item>Not Selected</item>
+        <item>Hostel 1</item>
+        <item>Hostel 2</item>
+        <item>Hostel 3</item>
+        <item>Hostel 4</item>
+        <item>Hostel 5</item>
+        <item>Hostel 6</item>
+        <item>Hostel 7</item>
+        <item>Hostel 8</item>
+        <item>Hostel 9</item>
+        <item>Hostel 10</item>
+        <item>Hostel 11</item>
+        <item>Hostel 12</item>
+        <item>Hostel 13</item>
+        <item>IC Arena</item>
+        <item>Upper Lawn</item>
+    </string-array>
+</resources>

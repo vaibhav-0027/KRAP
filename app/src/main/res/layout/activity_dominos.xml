@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backone"
+    tools:context=".Dominos">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g0"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g2"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g3"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g4"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g5"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g6"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/dominosImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/g3"
+        app:layout_constraintTop_toBottomOf="@id/g0"
+        app:layout_constraintEnd_toStartOf="@id/g4"
+        app:layout_constraintBottom_toTopOf="@id/g1"/>
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Your Total Order Price is :"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="@id/g3"
+        app:layout_constraintTop_toBottomOf="@id/g2"
+        app:layout_constraintEnd_toStartOf="@id/g4"
+        app:layout_constraintBottom_toTopOf="@id/g6"/>
+
+    <Button
+        android:id="@+id/paymentButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed to payment"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="@id/g3"
+        app:layout_constraintTop_toBottomOf="@id/g6"
+        app:layout_constraintEnd_toStartOf="@id/g4"
+        app:layout_constraintBottom_toTopOf="@id/g5"/>
+
+    <ScrollView
+        android:id="@+id/menuScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/g3"
+        app:layout_constraintTop_toBottomOf="@id/g1"
+        app:layout_constraintEnd_toStartOf="@id/g4"
+        app:layout_constraintBottom_toTopOf="@id/g2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/listItem1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:paddingTop="20px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:drawable/dialog_holo_light_frame"
+                        android:paddingTop="20px"
+                        tools:srcCompat="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="pizza1"
+                            android:fontFamily="Roboto-Thin italic"
+                            android:paddingLeft="10dp"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="free mei hi lelo"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/veglogo"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

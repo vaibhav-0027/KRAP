@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backone"
+    tools:context=".Nearby">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g0"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g2"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g3"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g4"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:src="@drawable/logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/g2"
+        app:layout_constraintTop_toBottomOf="@id/g0"
+        app:layout_constraintEnd_toStartOf="@id/g3"
+        app:layout_constraintBottom_toTopOf="@id/g1"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="@id/g2"
+        app:layout_constraintTop_toBottomOf="@id/g1"
+        app:layout_constraintEnd_toStartOf="@id/g3"
+        app:layout_constraintBottom_toTopOf="@id/g4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/listItem1"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:paddingTop="20px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:background="@android:drawable/dialog_holo_light_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20px"
+                        tools:srcCompat="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="this is the first one"
+                            android:paddingLeft="10dp"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="this is small text"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listItem2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_marginTop="100dp"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:paddingTop="20px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:background="@android:drawable/dialog_holo_light_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20px"
+                        tools:srcCompat="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="this is the second one"
+                            android:paddingLeft="10dp"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="this is small text"
+                            android:paddingLeft="10dp"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listItem3"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:paddingTop="20px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="wrap_content"
+                        android:background="@android:drawable/dialog_holo_light_frame"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20px"
+                        tools:srcCompat="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="this is the third one"
+                            android:paddingLeft="10dp"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="this is small text"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listItem4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:layout_marginTop="300dp"
+                android:minHeight="100dp"
+                android:orientation="vertical"
+                android:paddingTop="20px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="8dp">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="20px"
+                        android:background="@android:drawable/dialog_holo_light_frame"
+                        tools:srcCompat="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="this is the fourth one"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="this is small text"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backone"
+    tools:context=".Summary">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/g0"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g2"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g3"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g4"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g5"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g6"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g7"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.constraint.Guideline
+        android:id="@+id/g8"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="@id/g6"
+        app:layout_constraintTop_toBottomOf="@id/g0"
+        app:layout_constraintEnd_toStartOf="@id/g7"
+        app:layout_constraintBottom_toTopOf="@id/g1"
+        android:src="@color/colorPrimaryDark"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:text="Select Your Address :"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="@id/g6"
+        app:layout_constraintTop_toBottomOf="@id/g2"
+        app:layout_constraintEnd_toStartOf="@id/g7"
+        app:layout_constraintBottom_toTopOf="@id/g3"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <Spinner
+        android:id="@+id/addressSpinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:entries="@array/address_array"
+        android:prompt="@string/address"
+        app:layout_constraintStart_toStartOf="@id/g6"
+        app:layout_constraintTop_toBottomOf="@id/g3"
+        app:layout_constraintEnd_toStartOf="@id/g7"
+        app:layout_constraintBottom_toTopOf="@id/g4"/>
+
+    <ImageView
+        android:id="@+id/paytmImageView"
+        android:src="@drawable/paytm"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="@id/g6"
+        app:layout_constraintTop_toBottomOf="@id/g4"
+        app:layout_constraintEnd_toStartOf="@id/g8"
+        app:layout_constraintBottom_toTopOf="@id/g5"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+</android.support.constraint.ConstraintLayout>
